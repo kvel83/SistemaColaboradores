@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+﻿# Sistema Colaboradores
+**URL**: https://kvel83.github.io/SistemaColaboradores/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Descripción</h2>
+<p>Proyecto realizado para la administración de colaboradores, se despliega la información básica en una tabla donde se pueden actualizar los datos de cada uno o eliminar al colaborador. Tambien se puede realizar la búsqueda de colaboradores por algún texto contenido en alguno de los campos de su información asi como crear un nuevo colaborador</p>
+<h2>Estado del proyecto</h2>
+<h4 align="center"> :construction: Proyecto en construcción :construction: </h4>
+<h2>Funcionalidades</h2>
 
-## Available Scripts
+ - Buscador de Colaborador: Al ingresar algún texto en la barra buscadora esta actualizará de forma inmediata y dinámica a los colaboradores que contengan dicha información.
+ - Agregar Colaborador: Se debe ingresar un nombre y un email válido para que el colaborador sea ingresado, el ID se crea de forma incremental.
+ - Actualizar Colaborador: Al presionar el botón de actualizar de alguno de los colaboradores se abre una ventana modal donde se puede actualizar el nombre y el email.
+ - Eliminar Colaborador: Al presionar el botón de eliminar colaborador se borra de la tabla donde se muestra el listado de colaboradores.
+				 
+<h2>Tecnologías utilizadas</h2>
+ 
+ - React V18.2.0
+ - React Bootstrap V1.6.1
+ 
+Además dentro de la programación se hace uso de Books como UseState y UseEffect.
 
-In the project directory, you can run:
+<h2>BUGS</h2>
+Bugs en proceso de corrección:
 
-### `npm start`
+ - Crear Colaborador: Al crear un nuevo colaborador los input no se limpian automáticamente.
+ - Actualizar Colaborador: Al actualizar un colaborador, luego eliminar a cualquier otro y tratar de actualizar cualquier otro colaborador este último se actualiza automáticamente con la data de la ultima actualización.
+ - Eliminar Colaborador: Solo se puede eliminar 1 colaborador, al tratar de eliminar el segundo no realiza el proceso.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

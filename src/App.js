@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ListWorkers from "./components/listWorkers/listWorkers";
+import SearchWorker from "./components/searchWorker/searchWorker";
+import CreateWorker from "./components/createWorker/createWorker";
+import { BaseColaboradores } from "./data/colaboradores";
+
+function App(){
+    const [colaboradoresList, setColaboradoresList] = useState(BaseColaboradores);
+    const [searchWorker, setSearchWorker] = useState('');
+    return (
+            <div className="container">
+                <SearchWorker colaboradores = {setSearchWorker}/>
+                <hr/>
+                <CreateWorker colaboradores = {colaboradoresList} setColaboradores = {setColaboradoresList}/>
+                <hr/>
+                <ListWorkers colaboradores = {colaboradoresList} searchWorker = {searchWorker} setColaboradores = {setColaboradoresList}/>
+            </div>
+        );
+
+
+
 }
 
 export default App;
