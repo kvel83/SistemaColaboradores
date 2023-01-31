@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SistemaColaboradores/static/css/main.22d0eea8.css",
+    "main.js": "/SistemaColaboradores/static/js/main.931c307a.js",
+    "index.html": "/SistemaColaboradores/index.html",
+    "main.22d0eea8.css.map": "/SistemaColaboradores/static/css/main.22d0eea8.css.map",
+    "main.931c307a.js.map": "/SistemaColaboradores/static/js/main.931c307a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22d0eea8.css",
+    "static/js/main.931c307a.js"
+  ]
+}
